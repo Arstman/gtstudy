@@ -19,7 +19,6 @@ fn main() {
         println!("Hello: {}, {:?}, {:?}", x, name2, name3);
     };
 
-
     println!(
         "c1: {}, c2: {}, c3: {}, c4: {}, c5: {}, main: {}",
         size_of_val(&c1),
@@ -35,17 +34,15 @@ fn main() {
     let vec = vec!["Rust", "Elixir", "Javascript"];
     let v = &vec[..];
 
-    let data = (1,2,3,4,5);
+    let data = (1, 2, 3, 4, 5);
 
     let c6 = move || {
         println!("data: {:?}", data);
 
         println!("v: {:?}, name: {:?}", v, name_t.clone());
-
     };
 
     println!("c6: {}", size_of_val(&c6));
 
     println!("data: {}, v: {}", size_of_val(&data), size_of_val(v));
-
 }

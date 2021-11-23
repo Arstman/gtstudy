@@ -2,4 +2,6 @@
 members = [
   "mystring",
   "iteratorExt",
+  "closure",
+  "kv",
 ]
